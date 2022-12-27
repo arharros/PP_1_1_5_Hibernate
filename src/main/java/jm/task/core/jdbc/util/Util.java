@@ -13,9 +13,6 @@ public class Util {
         Connection connectionDb = null;
         try {
             connectionDb = DriverManager.getConnection(URL, USER, PASSWORD);
-//            if (!connectionDb.isClosed()) {
-//                System.out.println("Подключение к БД удалось!");
-//            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
